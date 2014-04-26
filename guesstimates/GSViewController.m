@@ -195,7 +195,10 @@
                                                 @"Cleaning the carpet",
                                                 @"Releasing the sheep",
                                                 @"Throwing the holy hand grenade",
-                                                @"Trolling the squirrel"]];
+                                                @"Trolling the squirrel",
+                                                @"Ordering a pizza"
+                                                @"rm -rf the mushroom",
+                                                @"Creating the portal"]];
     }
     
     return _actionGenerator;
