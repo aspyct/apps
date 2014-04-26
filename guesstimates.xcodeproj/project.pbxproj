@@ -21,6 +21,10 @@
 		74FE9E4F190C332000682628 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE9E31190C332000682628 /* UIKit.framework */; };
 		74FE9E57190C332000682628 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 74FE9E55190C332000682628 /* InfoPlist.strings */; };
 		74FE9E59190C332000682628 /* guesstimatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FE9E58190C332000682628 /* guesstimatesTests.m */; };
+		74FE9E64190C33CB00682628 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE9E63190C33CB00682628 /* Crashlytics.framework */; };
+		74FE9E67190C369800682628 /* GSThinkingProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FE9E66190C369800682628 /* GSThinkingProgress.m */; };
+		74FE9E69190C3A5800682628 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FE9E68190C3A5800682628 /* iAd.framework */; };
+		74FE9E6C190C3B3200682628 /* GSSillyActionGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 74FE9E6B190C3B3200682628 /* GSSillyActionGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,12 @@
 		74FE9E54190C332000682628 /* guesstimatesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "guesstimatesTests-Info.plist"; sourceTree = "<group>"; };
 		74FE9E56190C332000682628 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		74FE9E58190C332000682628 /* guesstimatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = guesstimatesTests.m; sourceTree = "<group>"; };
+		74FE9E63190C33CB00682628 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		74FE9E65190C369800682628 /* GSThinkingProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSThinkingProgress.h; sourceTree = "<group>"; };
+		74FE9E66190C369800682628 /* GSThinkingProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSThinkingProgress.m; sourceTree = "<group>"; };
+		74FE9E68190C3A5800682628 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		74FE9E6A190C3B3200682628 /* GSSillyActionGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSillyActionGenerator.h; sourceTree = "<group>"; };
+		74FE9E6B190C3B3200682628 /* GSSillyActionGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSillyActionGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74FE9E69190C3A5800682628 /* iAd.framework in Frameworks */,
 				74FE9E30190C332000682628 /* CoreGraphics.framework in Frameworks */,
 				74FE9E32190C332000682628 /* UIKit.framework in Frameworks */,
+				74FE9E64190C33CB00682628 /* Crashlytics.framework in Frameworks */,
 				74FE9E2E190C332000682628 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +113,8 @@
 		74FE9E2C190C332000682628 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				74FE9E68190C3A5800682628 /* iAd.framework */,
+				74FE9E63190C33CB00682628 /* Crashlytics.framework */,
 				74FE9E2D190C332000682628 /* Foundation.framework */,
 				74FE9E2F190C332000682628 /* CoreGraphics.framework */,
 				74FE9E31190C332000682628 /* UIKit.framework */,
@@ -117,6 +131,10 @@
 				74FE9E3F190C332000682628 /* Main.storyboard */,
 				74FE9E42190C332000682628 /* GSViewController.h */,
 				74FE9E43190C332000682628 /* GSViewController.m */,
+				74FE9E65190C369800682628 /* GSThinkingProgress.h */,
+				74FE9E66190C369800682628 /* GSThinkingProgress.m */,
+				74FE9E6A190C3B3200682628 /* GSSillyActionGenerator.h */,
+				74FE9E6B190C3B3200682628 /* GSSillyActionGenerator.m */,
 				74FE9E45190C332000682628 /* Images.xcassets */,
 				74FE9E34190C332000682628 /* Supporting Files */,
 			);
@@ -162,6 +180,7 @@
 				74FE9E26190C332000682628 /* Sources */,
 				74FE9E27190C332000682628 /* Frameworks */,
 				74FE9E28190C332000682628 /* Resources */,
+				74FE9E62190C338100682628 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -245,6 +264,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74FE9E62190C338100682628 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run e3b9e08e11c7aa9a130ac43821a35478d0eab64a 0cffffe03312666596f85b075067d9a6e0bfe545a30aada5644c19255711b0d6";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74FE9E26190C332000682628 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,6 +288,8 @@
 			files = (
 				74FE9E3E190C332000682628 /* GSAppDelegate.m in Sources */,
 				74FE9E44190C332000682628 /* GSViewController.m in Sources */,
+				74FE9E6C190C3B3200682628 /* GSSillyActionGenerator.m in Sources */,
+				74FE9E67190C369800682628 /* GSThinkingProgress.m in Sources */,
 				74FE9E3A190C332000682628 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,6 +415,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "guesstimates/guesstimates-Prefix.pch";
 				INFOPLIST_FILE = "guesstimates/guesstimates-Info.plist";
@@ -390,6 +432,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "guesstimates/guesstimates-Prefix.pch";
 				INFOPLIST_FILE = "guesstimates/guesstimates-Info.plist";

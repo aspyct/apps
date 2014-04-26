@@ -6,13 +6,16 @@
 //  Copyright (c) 2014 Antoine d'Otreppe. All rights reserved.
 //
 
+#import <Crashlytics/Crashlytics.h>
 #import "GSAppDelegate.h"
 
 @implementation GSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [Crashlytics startWithAPIKey:@"e3b9e08e11c7aa9a130ac43821a35478d0eab64a"];
+    application.applicationSupportsShakeToEdit = YES;
+    application.statusBarHidden = YES;
     return YES;
 }
 							
