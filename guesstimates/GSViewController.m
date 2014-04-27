@@ -196,7 +196,7 @@
                                                 @"Releasing the sheep",
                                                 @"Throwing the holy hand grenade",
                                                 @"Trolling the squirrel",
-                                                @"Ordering a pizza"
+                                                @"Ordering the pizza",
                                                 @"rm -rf the mushroom",
                                                 @"Creating the portal"]];
     }

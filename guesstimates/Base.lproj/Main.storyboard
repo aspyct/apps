@@ -16,95 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e50-vY-5XP" userLabel="ShakeMe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need a quick estimate?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds1-q6-Ie7">
-                                        <rect key="frame" x="70" y="58" width="181" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shake!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSD-o5-G51">
-                                        <rect key="frame" x="0.0" y="253" width="320" height="62"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="54"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="ds1-q6-Ie7" firstAttribute="top" secondItem="e50-vY-5XP" secondAttribute="top" constant="58" id="0gN-r5-2Kt"/>
-                                    <constraint firstAttribute="centerX" secondItem="ds1-q6-Ie7" secondAttribute="centerX" constant="-0.5" id="9WA-7d-ceI"/>
-                                    <constraint firstAttribute="centerX" secondItem="pSD-o5-G51" secondAttribute="centerX" id="DET-uX-pnz"/>
-                                    <constraint firstAttribute="centerY" secondItem="pSD-o5-G51" secondAttribute="centerY" id="DXG-FH-2m4"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-Cv-V8W" userLabel="Thinking">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="N0b-nY-OOG">
-                                        <rect key="frame" x="20" y="301" width="236" height="3"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </progressView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Guesstimate in progress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2a-1E-DaT">
-                                        <rect key="frame" x="47" y="103" width="233" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Running away from the project manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-T2-INf">
-                                        <rect key="frame" x="20" y="311" width="280" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-ge-Qeu">
-                                        <rect key="frame" x="142" y="221" width="37" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </activityIndicatorView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-ND-m6L">
-                                        <rect key="frame" x="259" y="291" width="41" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="hang tight..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6A-rY-7rg">
-                                        <rect key="frame" x="179" y="133" width="92" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="f2a-1E-DaT" firstAttribute="top" secondItem="tdd-Cv-V8W" secondAttribute="top" constant="103" id="fHN-RB-vAf"/>
-                                    <constraint firstItem="N0b-nY-OOG" firstAttribute="top" secondItem="tdd-Cv-V8W" secondAttribute="top" constant="301" id="pbI-Hf-3Jf"/>
-                                    <constraint firstItem="ybw-T2-INf" firstAttribute="top" secondItem="N0b-nY-OOG" secondAttribute="bottom" constant="8" id="pbv-Q0-Uyf"/>
-                                    <constraint firstItem="F6A-rY-7rg" firstAttribute="top" secondItem="f2a-1E-DaT" secondAttribute="bottom" constant="-3" id="qSm-gx-vei"/>
-                                    <constraint firstItem="TCH-ge-Qeu" firstAttribute="top" secondItem="tdd-Cv-V8W" secondAttribute="top" constant="221" id="uk6-bP-aQ7"/>
-                                    <constraint firstItem="cMU-ND-m6L" firstAttribute="centerY" secondItem="N0b-nY-OOG" secondAttribute="centerY" constant="-0.5" id="z2T-o8-c59"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3IP-lz-5rS" userLabel="Results">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="5 days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHe-8B-oQ6">
-                                        <rect key="frame" x="61" y="150" width="198" height="37"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHe-8B-oQ6">
+                                        <rect key="frame" x="0.0" y="150" width="320" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="32"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Need more time? Shake again!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvL-Jx-0Q0">
-                                        <rect key="frame" x="42" y="189" width="236" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need more time? Shake again!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FvL-Jx-0Q0">
+                                        <rect key="frame" x="0.0" y="189" width="320" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -156,8 +79,92 @@
                                     <constraint firstItem="ERX-if-75i" firstAttribute="leading" secondItem="3IP-lz-5rS" secondAttribute="leading" constant="20" id="CEu-dW-fa6"/>
                                     <constraint firstAttribute="bottom" secondItem="6di-eu-03u" secondAttribute="bottom" constant="58" id="JOw-k1-5DM"/>
                                     <constraint firstAttribute="trailing" secondItem="6di-eu-03u" secondAttribute="trailing" constant="20" id="KJg-z4-EvL"/>
+                                    <constraint firstAttribute="centerX" secondItem="DHe-8B-oQ6" secondAttribute="centerX" id="MRx-2s-dWe"/>
                                     <constraint firstItem="FvL-Jx-0Q0" firstAttribute="top" secondItem="DHe-8B-oQ6" secondAttribute="bottom" constant="2" id="VM6-Hv-LXc"/>
+                                    <constraint firstAttribute="centerX" secondItem="FvL-Jx-0Q0" secondAttribute="centerX" id="Zdg-7L-dVg"/>
+                                    <constraint firstAttribute="width" secondItem="FvL-Jx-0Q0" secondAttribute="width" id="myO-zF-ukh"/>
+                                    <constraint firstAttribute="width" secondItem="DHe-8B-oQ6" secondAttribute="width" id="rF5-Fb-HXf"/>
                                     <constraint firstItem="DHe-8B-oQ6" firstAttribute="top" secondItem="3IP-lz-5rS" secondAttribute="top" constant="150" id="vGT-VJ-RbJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e50-vY-5XP" userLabel="ShakeMe">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need a quick estimate?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds1-q6-Ie7">
+                                        <rect key="frame" x="70" y="58" width="181" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shake!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSD-o5-G51">
+                                        <rect key="frame" x="0.0" y="253" width="320" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="54"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ds1-q6-Ie7" firstAttribute="top" secondItem="e50-vY-5XP" secondAttribute="top" constant="58" id="0gN-r5-2Kt"/>
+                                    <constraint firstAttribute="centerX" secondItem="ds1-q6-Ie7" secondAttribute="centerX" constant="-0.5" id="9WA-7d-ceI"/>
+                                    <constraint firstAttribute="centerX" secondItem="pSD-o5-G51" secondAttribute="centerX" id="DET-uX-pnz"/>
+                                    <constraint firstAttribute="centerY" secondItem="pSD-o5-G51" secondAttribute="centerY" id="DXG-FH-2m4"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdd-Cv-V8W" userLabel="Thinking">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="N0b-nY-OOG">
+                                        <rect key="frame" x="20" y="301" width="236" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </progressView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Guesstimate in progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2a-1E-DaT">
+                                        <rect key="frame" x="0.0" y="103" width="320" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Running away from the project manager" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-T2-INf">
+                                        <rect key="frame" x="20" y="311" width="280" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TCH-ge-Qeu">
+                                        <rect key="frame" x="142" y="221" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="100%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-ND-m6L">
+                                        <rect key="frame" x="259" y="291" width="41" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="hang tight..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6A-rY-7rg">
+                                        <rect key="frame" x="182" y="133" width="92" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="f2a-1E-DaT" secondAttribute="centerX" id="WoG-8B-cln"/>
+                                    <constraint firstAttribute="width" secondItem="f2a-1E-DaT" secondAttribute="width" id="alA-Kg-hBo"/>
+                                    <constraint firstItem="f2a-1E-DaT" firstAttribute="top" secondItem="tdd-Cv-V8W" secondAttribute="top" constant="103" id="fHN-RB-vAf"/>
+                                    <constraint firstItem="N0b-nY-OOG" firstAttribute="top" secondItem="tdd-Cv-V8W" secondAttribute="top" constant="301" id="pbI-Hf-3Jf"/>
+                                    <constraint firstItem="ybw-T2-INf" firstAttribute="top" secondItem="N0b-nY-OOG" secondAttribute="bottom" constant="8" id="pbv-Q0-Uyf"/>
+                                    <constraint firstItem="F6A-rY-7rg" firstAttribute="top" secondItem="f2a-1E-DaT" secondAttribute="bottom" constant="-3" id="qSm-gx-vei"/>
+                                    <constraint firstItem="TCH-ge-Qeu" firstAttribute="top" secondItem="tdd-Cv-V8W" secondAttribute="top" constant="221" id="uk6-bP-aQ7"/>
+                                    <constraint firstAttribute="trailing" secondItem="F6A-rY-7rg" secondAttribute="trailing" constant="49" id="yEc-6L-OSV"/>
+                                    <constraint firstItem="cMU-ND-m6L" firstAttribute="centerY" secondItem="N0b-nY-OOG" secondAttribute="centerY" constant="-0.5" id="z2T-o8-c59"/>
                                 </constraints>
                             </view>
                         </subviews>
