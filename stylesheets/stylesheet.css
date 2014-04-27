@@ -277,13 +277,13 @@ div.product {
 
 div.product img {
     padding: 0;
-    border: 1px solid #cccccc;
 }
 
 div.product img.logo {
     float: left;
     width: 135px;
     height: 135px;
+    border: 1px solid #cccccc;
     margin-right: 11px;
     padding: 6px;
 }
