@@ -206,7 +206,7 @@
 
 - (IBAction)doShare:(id)sender
 {
-    NSArray *items = @[[NSURL URLWithString:@"http://google.be"]];
+    NSArray *items = @[[NSURL URLWithString:@"https://itunes.apple.com/us/app/guesstimates-+/id870007083?ls=1&mt=8"]];
     UIActivityViewController *activity = [[UIActivityViewController alloc]
                                           initWithActivityItems:items
                                           applicationActivities:nil];
